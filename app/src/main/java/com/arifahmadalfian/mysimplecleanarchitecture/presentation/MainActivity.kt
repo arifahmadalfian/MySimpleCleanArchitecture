@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.arifahmadalfian.mysimplecleanarchitecture.databinding.ActivityMainBinding
+import com.dicoding.mysimplecleanarchitecture.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         viewModel.setName("Alfian")
         viewModel.message.observe(this, Observer {
-            binding.tvWellcome.text = it.welcomeMessage
+            binding.tvWelcome.text = it.welcomeMessage
         })
     }
 }
